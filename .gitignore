@@ -1,0 +1,5 @@
+composer.phar
+/vendor/
+config.inc.php
+skins/*/templates/*
+!skins/*/templates/leak_found.html
