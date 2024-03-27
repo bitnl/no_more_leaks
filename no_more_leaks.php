@@ -86,7 +86,7 @@ class no_more_leaks extends rcube_plugin {
             return $args;
         }
 
-        $this->dprint("login_after_hook() no_more_leaks_found_leak was true");
+        $this->dprint("login_after_hook() no_more_leaks_found_leak was true", $always = true);
 
         $rcmail = rcmail::get_instance();
         if ($rcmail->config->get('nml_invalidate_session_when_leaked', true)) {
